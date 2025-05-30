@@ -1,3 +1,5 @@
+package ap2025.hw4;
+
 public class Task {
     private final int id;
     private final String description;
@@ -23,6 +25,6 @@ public class Task {
 
     @Override
     public String toString() {
-        return "Task{id=" + id + ", description='" + description + "', priority=" + priority + "}";
+        return "ap2025.hw4.Task{id=" + id + ", description='" + description + "', priority=" + priority + "}";
     }
 }

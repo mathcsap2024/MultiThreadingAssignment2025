@@ -1,3 +1,5 @@
+package ap2025.hw4;
+
 import java.util.Map;
 import java.util.Random;
 

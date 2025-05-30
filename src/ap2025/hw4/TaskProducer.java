@@ -1,3 +1,5 @@
+package ap2025.hw4;
+
 import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -22,7 +24,7 @@ public class TaskProducer implements Runnable {
         for (int i = 0; i < numberOfTasksToProduce && !shutdownRequested; i++) {
             try {
                 int taskId = taskCounter.getAndIncrement();
-                // TODO: Create Task with taskId and Assign a random priority (HIGH, MEDIUM, or LOW) to the task.
+                // TODO: Create ap2025.hw4.Task with taskId and Assign a random priority (HIGH, MEDIUM, or LOW) to the task.
                 //  Get the correct CustomBlockingTaskQueue instance from the 'priorityQueues' map
                 //  based on the task's 'priority'. implement the rest based on the document.
 

@@ -1,3 +1,5 @@
+package ap2025.hw4;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -14,12 +16,12 @@ public class BlockingTaskQueue {
     }
 
     public void put(Task task) throws InterruptedException {
-        // TODO: BlockingTaskQueue put method
+        // TODO: ap2025.hw4.BlockingTaskQueue put method
     }
 
     public Task take() throws InterruptedException {
         Task task = null;
-        // TODO: BlockingTaskQueue take method (blocking)
+        // TODO: ap2025.hw4.BlockingTaskQueue take method (blocking)
 
 
         return task;
@@ -27,8 +29,8 @@ public class BlockingTaskQueue {
 
     public synchronized Task poll() {
 
-        // TODO: BlockingTaskQueue poll method (non-blocking)
-        //  should return a Task instead of null
+        // TODO: ap2025.hw4.BlockingTaskQueue poll method (non-blocking)
+        //  should return a ap2025.hw4.Task instead of null
 
         return null;
     }
