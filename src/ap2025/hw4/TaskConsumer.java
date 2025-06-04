@@ -12,6 +12,8 @@ public class TaskConsumer implements Runnable {
         this.workerId = workerId;
     }
 
+    volatile boolean shutdownSignalReceived = false;
+
     @Override
     public void run() {
         System.out.println("Worker " + workerId + " (Thread: " + Thread.currentThread().getName() + ") started.");
@@ -62,6 +64,7 @@ public class TaskConsumer implements Runnable {
     }
 
     public void signalShutdown() {
+        shutdownSignalReceived = true;
         // TODO: signal shutDown
         // Crucially, notify any workers waiting on the global lock so they can
         // re-evaluate their conditions (especially the shutdown condition).
